@@ -12,16 +12,7 @@
  * Alumno: Mendez Juan Gabriel
  * Division:1F
     Menu:
-ok     1. Cargar los datos de los empleados desde el archivo data.csv (modo texto).
-ok     2. Cargar los datos de los empleados desde el archivo data.csv (modo binario).
-ok     3. Alta de empleado
-ok     4. Modificar datos de empleado
-ok     5. Baja de empleado
-ok     6. Listar empleados
-ok    7. Ordenar empleados
-     8. Guardar los datos de los empleados en el archivo data.csv (modo texto).
-     9. Guardar los datos de los empleados en el archivo data.csv (modo binario).
-    10. Salir
+
 *****************************************************/
 
 
