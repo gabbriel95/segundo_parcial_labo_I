@@ -178,6 +178,37 @@ int contadorDeAlgo(void* parametro)
 	return retorno;
 }
 
+void precioDecuento(void* parametro)
+{
+	int descuento;
+	Ebook* auxEditorial;
+
+	if(parametro != NULL)
+	{
+		auxEditorial = (Ebook*) parametro;
+		if(auxEditorial->idEditorial == 1 && auxEditorial->precio >= 300)
+		{
+			descuento = auxEditorial->precio * 0.20;
+			auxEditorial->precio = auxEditorial->precio - descuento;
+
+		}else if (auxEditorial->idEditorial == 2 && auxEditorial->precio<=200)
+		{
+			descuento = auxEditorial->precio * 0.10;
+			auxEditorial->precio = auxEditorial->precio - descuento;
+		}
+	}
+
+
+}
+
+void controller_aplicaDescuento(LinkedList* this)
+{
+	ll_map(this, precioDecuento);
+	puts("\nDescuentos aplicados correctante");
+
+}
+
+
 int controller_Contador(LinkedList* this)
 {
 	int retorno = 0;

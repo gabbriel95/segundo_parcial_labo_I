@@ -1,21 +1,20 @@
-id,titulo del libro,autor,precio,id editorial
-1,Harry Potter,Archibald Syder,340,1
+1,Harry Potter,Archibald Syder,272,1
 2,El señor de los anillos,Otto Dorward,58,5
 3,Lo que el viento se llevo,Avigdor De Cleyne,25,4
-4,Juego de tronos,Dur Gyse,98,2
-5,El rey león,Rey Piel,40,2
+4,Juego de tronos,Dur Gyse,89,2
+5,El rey león,Rey Piel,36,2
 6,El rey Arturo,Alphonso Whittles,500,2
-7,It,Jemimah McPhillips,119,2
+7,It,Jemimah McPhillips,108,2
 8,El niño con el pijama a rayas,Sileas O'Codihie,85,6
 9,La salud de Diego,Mano Hudless,141,1
-10,Naturaleza Viva,Nadiya Timny,114,2
+10,Naturaleza Viva,Nadiya Timny,103,2
 11,Flora y fauna Argentina,Fowler Sanday,122,5
-12,La historia de Messi,Amery Yegorev,1000,1
+12,La historia de Messi,Amery Yegorev,800,1
 13,Cocinando con Mirtha Legrand,Cordy Radenhurst,211,6
 14,Vacaciones con Ricky Fort,Deana Cawsy,138,5
 15,Todos chorros,Winona Woolager,124,1
-16,Pizza y faina,Ashley Collcott,197,2
-17,Fernet con coca,Woody Hunnawill,300,1
+16,Pizza y faina,Ashley Collcott,178,2
+17,Fernet con coca,Woody Hunnawill,240,1
 18,La plandemia,Elissa Dartnall,149,5
 19,El péndulo argentino,Bran Jodlowski,1000,2
-20,Batman: El mejor superHéroe,Harvey Shaughnessy,100,2
+20,Batman: El mejor superHéroe,Harvey Shaughnessy,90,2

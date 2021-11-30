@@ -22,7 +22,6 @@ int main()
 	LinkedList* listaBooks = ll_newLinkedList();
 	LinkedList* listaMinotauro;
 	int opcion;
-	int contador = 0;
 	char nombreArchivo[12];
 
 	do
@@ -31,14 +30,11 @@ int main()
 				"2. Ordenar lista por autor\n"
 				"3. Filtrar libros por editorial MINOTAURO\n"
 				"4. Guardar archivos de libros editorial MINOTAURO\n"
-				"5. Contador de minotauro\n"
-				"6. Listar libros\n"
-				"7. \n"
-				"8. \n"
-				"9. \n"
-				"10. Salir\n");
+				"5. Listar libros\n"
+				"6. Aplicar descuentos y generar archivo\n"
+				"7. Salir\n");
 
-			Utn_GetNumero(&opcion, "\nSeleccione una opcion\n", "\n Error, opcion no valida", 1, 10, 3);
+			Utn_GetNumero(&opcion, "\nSeleccione una opcion\n", "\n Error, opcion no valida", 1, 7, 3);
 
 			switch(opcion)
 	        {
@@ -51,6 +47,9 @@ int main()
 	        		}else if(strcmp(nombreArchivo, "editoriales") == 0)
 	        		{
 	        			controller_loadFromText("editoriales.csv", listaBooks);
+	        		}else if(strcmp(nombreArchivo, "mapeado") == 0)
+	        		{
+	        			controller_loadFromText("mapeado.csv", listaBooks);
 	        		}
 	        	}
 
@@ -68,33 +67,21 @@ int main()
 	            break;
 
 	        case 5:
-	        	contador = controller_Contador(listaBooks);
-	        	printf("\n La cantidad de libros de minotauro es: %d", contador);
-	            break;
-
-	        case 6:
 	        	controller_ListBooks(listaBooks);
 	            break;
 
+	        case 6:
+	            controller_aplicaDescuento(listaBooks);
+	        	controller_saveAsText("mapeado.csv", listaBooks);
+	            break;
+
 	        case 7:
-
 	            break;
 
-	        case 8:
-
-	            break;
-
-	        case 9:
-
-	            break;
-
-	        case 10:
-
-	            break;
 	        }
 
 	    }
-	    while(opcion != 10);
+	    while(opcion != 7);
 
 
     return 0;

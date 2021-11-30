@@ -18,5 +18,9 @@ int contadorDeAlgo(void* parametro);
 int controller_Contador(LinkedList* this);
 
 
+int precioDecuento(void* parametro);
+void controller_aplicaDescuento(LinkedList* this);
+
+
 
 //funciones que se van a llamar desde el main

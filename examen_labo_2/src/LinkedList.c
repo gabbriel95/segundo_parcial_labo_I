@@ -646,3 +646,15 @@ int ll_count(LinkedList* this, int(*pFunc)(void* element))
 
 	return contador;
 }
+
+void ll_map(LinkedList* this, void (*pfunc)(void*))
+{
+	int tamanio = ll_len(this);
+	if(this != NULL && pfunc != NULL)
+	{
+		for(int i=0; i<tamanio; i++)
+		{
+			pfunc(ll_get(this,i));
+		}
+	}
+}
